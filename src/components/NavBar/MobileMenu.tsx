@@ -68,7 +68,7 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
                     animate="open"
                     exit="closed"
                     variants={menuVariants}
-                    className='fixed top-0 left-0 w-full h-screen bg-white'
+                    className='fixed top-0 left-0 w-full h-screen bg-white z-[20]'
                 >
                     <div className='relative top-[15%]'>
                         {/* BussinessTypes  */}

@@ -17,7 +17,7 @@ const MobileNavbar = () => {
             <div className='flex items-center gap-0'>
                 <ShoppingCart />
                 <div 
-                    className='p-[20px] relative z-[10] ' id='burger-menu'
+                    className='p-[20px] relative z-[30] ' id='burger-menu'
                     onClick={toggleMenu}
                 >
                     <div className={`w-[22px] h-[2px] bg-secondary absolute top-[50%] left-1/2 -translate-x-1/2 transition-all duration-200 
