@@ -15,7 +15,7 @@ const PlanCard = ({ planInfo }: PlanCardProps) => {
             <div className="flex flex-col h-full justify-between gap-8">
                 <div className="flex flex-col gap-4">
                     <h3 className="text-2xl font-normal text-secondary lg:text-4xl">{planInfo.title}</h3>
-                    <p className="font-normal text-secondary base">
+                    <p className="font-normal text-secondary text-base lg:text-lg">
                         {planInfo.description}
                     </p>
                 </div>
