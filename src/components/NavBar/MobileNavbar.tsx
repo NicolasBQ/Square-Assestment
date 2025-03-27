@@ -1,12 +1,8 @@
 import { useState } from 'react';
 import { Square } from './Square';
 import { ShoppingCart } from './ShoppingCart';
-import { BussinessTypes } from './BusinessTypes';
-import { Options } from './Options';
+import { MobileMenu } from './MobileMenu';
 
-interface MobileMenuProps {
-    isOpen: boolean;
-}
 
 const MobileNavbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,18 +37,7 @@ const MobileNavbar = () => {
 }
 
 
-const MobileMenu = ({ isOpen }: MobileMenuProps) => {
-    return (
-        <div className={`fixed top-0 left-0 w-full h-screen bg-white transform transition-transform duration-200 ease-in-out ${
-            isOpen ? 'translate-y-0' : '-translate-y-full'
-        }`}>
-            <div className='relative top-[15%]'>
-                <BussinessTypes />
-                <Options />
-            </div>
-        </div>
-    )
-}
+
 
 export {
     MobileNavbar
