@@ -14,6 +14,8 @@
   --color-secondary-blue: #CEE7F3;
   --color-secondary-grey: #737373;
 
+  --bg-accent: #006AFF;
+
   --text-primary: #030303;
   --text-secondary: #1A1A1A;
   --text-grey: #D9D9D9;
@@ -23,7 +25,9 @@
   --text-secondary-blue: #CEE7F3;
   --text-secondary-grey: #737373;
 
+  --border-primary: #030303;
   --border-grey: #D9D9D9;
+  --border-accent: #006AFF;
 }
 
 @layer base {
@@ -31,5 +35,34 @@
     font-family: var(--font-sans);
   }
 }
+
+.button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #006AFF;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #fff;
+  border: 1px solid #006AFF;
+}
+
+.button:hover::before {
+  left: 0;
+}
+
 
 

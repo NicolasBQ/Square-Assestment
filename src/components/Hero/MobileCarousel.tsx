@@ -45,7 +45,7 @@ const MobileCarousel = () => {
             <AnimatePresence >
                 <motion.div
                     className="flex gap-1"
-                    animate={{ x: -page * (width - 60)}} // It moves in multiples of the width of the screen minus and adjustment
+                    animate={{ x: -page * (width - 45)}} // It moves in multiples of the width of the screen minus an adjustment
                     transition={{ type: "spring", stiffness: 100, damping: 20 }}
                 >
                     {images.map((src, index) => (
