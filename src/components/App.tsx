@@ -1,11 +1,9 @@
-import { NavbarMobile } from "./NavbarMobile"
+import { NavBar } from "./NavBar/NavBar"
 
 function App() {
   return (
     <>
-      <header>
-        <NavbarMobile />
-      </header>
+      <NavBar />
     </>
   )
 }
