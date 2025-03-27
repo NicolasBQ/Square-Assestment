@@ -1,13 +1,11 @@
-
+import { NavbarMobile } from "./NavbarMobile"
 
 function App() {
   return (
     <>
       <header>
-        
+        <NavbarMobile />
       </header>
-      <h1 className="text-3xl font-square">Priced to help you
-      grow and thrive.</h1>
     </>
   )
 }
