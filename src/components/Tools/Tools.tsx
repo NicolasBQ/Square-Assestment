@@ -21,7 +21,7 @@ const Tools = () => {
     const handleFilter = (value: string) => setFilter(value)
 
     return (
-        <section className="relative py-16 px-6 lg:px-20 xl:px-24 2xl:px-48">
+        <section className="relative py-16 px-6 lg:px-20 xl:px-24 2xl:px-48" id="tools">
              <h2 className="text-3xl font-medium text-secondary lg:text-5xl">Tools to mix and match</h2>
              <Categories filter={filter} handleFilter={handleFilter}/>
              <ToolsList tools={tools}/>

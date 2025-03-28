@@ -23,7 +23,7 @@ const DesktopNavbar = () => {
                 <nav className="p-6 h-full flex flex-col justify-center">
                     <ul className="flex items-center space-y-0 space-x-4">
                         {options.map((option) => (
-                            <li key={option.id} className="font-semibold color-primary flex items-center text-base gap-1 cursor-pointer">
+                            <li key={option.id} className="font-semibold color-primary flex items-center text-base gap-1 cursor-pointer hover:text-dark-grey">
                                 {option.icon}
                                 {option.name}
                             </li>

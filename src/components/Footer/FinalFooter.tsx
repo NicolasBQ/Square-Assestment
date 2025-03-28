@@ -2,7 +2,7 @@ const items = ['Do not Share My Personal Information', 'Privacy Notice', 'Securi
 
 const FinalFooter = () => {
     return(
-        <section className="mt-14 flex flex-col items-center gap-2 lg:flex-row lg:items-start lg:justify-between">
+        <section className="mt-4 flex flex-col items-center gap-2 lg:flex-row lg:items-start lg:justify-between">
             <p className="text-base text-dark-grey mt-7 lg:mt-0">© 2024 Block, Inc</p>
 
             <ul className="flex flex-col items-center gap-2 lg:items-end">
