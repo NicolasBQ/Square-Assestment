@@ -5,6 +5,7 @@ import { Tools } from "./Tools/Tools";
 import { Proccessing } from "./Processing/Processing";
 import { PlansByBusiness } from "./PlansByBusiness/PlansByBusiness";
 import { Solutions } from "./Solutions/Solutions";
+import { Faq } from "./FAQ/Faq";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Proccessing />
         <PlansByBusiness />
         <Solutions />
+        <Faq />
       </main>
     </>
   )
