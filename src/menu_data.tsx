@@ -1,29 +1,25 @@
 import { UserIcon, QuestionMarkCircleIcon, ShoppingBagIcon } from "@heroicons/react/24/outline"
 
-const bussinessTypes = [
+const menuOptions = [
     {
-        id: 1,
-        name: 'Restaurants',
+        type: 'Restaurants',
+        items: ['Coffe shops', 'Full service']
     },
     {
-        id: 2,
-        name: 'Retail',
+        type: 'Retail',
+        items: ['Clothing', 'Home & gift']
     },
     {
-        id: 3,
-        name: 'Beauty',
+        type: 'Beauty',
+        items: ['Beauty salon', 'Nail Salon']
     },
     {
-        id: 4,
-        name: 'Services',
+        type: 'Services',
+        items: ['Home & commercial', 'Autootive services']
     },
     {
-        id: 5,
-        name: 'Products',
-    },
-    {
-        id: 6,
-        name: 'Pricing',
+        type: 'Pricing',
+        items: []
     }
 ]
 
@@ -46,6 +42,6 @@ const options = [
 ]
 
 export {
-    bussinessTypes,
+    menuOptions,
     options
 }
