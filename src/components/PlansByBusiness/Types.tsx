@@ -28,23 +28,25 @@ const Types = () => {
     return (
         <div className='flex flex-col gap-8 mt-14 xl:flex-row'>
             {types.map((type, index) => (
-                <article key={index} className='flex flex-col justify-between gap-4 xl:w-[380px] xl:h-[630px]'>
+                <article key={index} className='flex flex-col justify-between gap-4 xl:w-[380px] xl:h-[620px]'>
                     <div className='h-[180px] w-full lg:h-[290px]'>
                         <img src={type.img} alt={type.title} className='border-radius object-cover w-full h-full'/>
                     </div>
-                     <div>
-                        <h4 className="text-2xl font-medium text-secondary lg:text-2xl">{type.title}</h4>
-                        <p className='mt-3 font-normal text-secondary text-base lg:text-lg'>{type.description}</p>
-                     </div>
-                     <ul className='flex flex-col gap-2'>
-                        <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[0]}</li>
-                        <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[1]}</li>
-                        <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[2]}</li>
-                     </ul>
-
-                     <button className="text-base text-start text-accent font-semibold cursor-pointer">
+                    <div className='flex flex-col h-full justify-between'>
+                        <div>
+                            <h4 className="text-2xl font-medium text-secondary lg:text-2xl">{type.title}</h4>
+                            <p className='mt-3 font-normal text-secondary text-base lg:text-lg'>{type.description}</p>
+                        </div>
+                        <ul className='flex flex-col gap-2'>
+                            <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[0]}</li>
+                            <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[1]}</li>
+                            <li className='font-normal text-secondary text-base lg:text-lg'>• {type.features[2]}</li>
+                        </ul>
+                    </div>
+                    <button className="text-base text-start text-accent font-semibold cursor-pointer mt-3">
                         See Plans →
-                     </button>
+                    </button>
+                      
                 </article>
             ))}
         </div>
