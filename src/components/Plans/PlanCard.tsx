@@ -11,7 +11,7 @@ interface PlanCardProps {
 
 const PlanCard = ({ planInfo }: PlanCardProps) => {
     return (
-        <article className="rounded-2xl border-1 border-grey p-6 h-[410px] lg:w-[380px] lg:h-[456px]">
+        <article className="rounded-2xl border-1 border-grey p-6 h-[410px] lg:w-[380px] lg:h-[500px] xl:h-[456px]">
             <div className="flex flex-col h-full justify-between gap-8">
                 <div className="flex flex-col gap-4">
                     <h3 className="text-2xl font-normal text-secondary lg:text-4xl">{planInfo.title}</h3>

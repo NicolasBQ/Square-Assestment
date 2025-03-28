@@ -46,21 +46,47 @@ const ToolsList = ({ tools }: ProductListProps) => {
                 ))}
             </ul>
 
-            {!isExpanded && (
-                <div className="absolute bottom-10 left-0 w-full h-50 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+            {(!isExpanded && tools.length > 3) && (
+                <div className="absolute bottom-10 left-0 w-full h-50 bg-gradient-to-t from-white to-transparent pointer-events-none xl:hidden"></div>
             )}
 
-            <button 
-                onClick={toggleExpand} 
-                className="mt-5 flex items-center justify-center gap-2 cursor-pointer relative w-full "
-            >
-                <span className="before:content-[''] before:block before:w-[20%] before:border-t before:border-gray-300 before:absolute before:left-0 before:top-1/2 after:content-[''] after:block after:w-[20%] after:border-t after:border-gray-300 after:absolute after:right-0 after:top-1/2 lg:before:w-[40%] lg:after:w-[40%]">
-                </span>
+            {(!isExpanded && tools.length > 6) && (
+                <div className="hidden absolute bottom-10 left-0 w-full h-50 bg-gradient-to-t from-white to-transparent pointer-events-none xl:block"></div>
+            )}
 
-                <p className="text-xl p-2 rounded-sm text-center text-accent font-semibold hover:bg-blue-50">
-                    {isExpanded ? "− Collapse tools" : "+ Expand all tools"}
-                </p>
-            </button>
+            {
+                (tools.length > 3) && (
+                    <button 
+                        onClick={toggleExpand} 
+                        className="mt-5 flex items-center justify-center gap-2 cursor-pointer relative w-full xl:hidden"
+                    >
+                        <span className="before:content-[''] before:block before:w-[20%] before:border-t before:border-gray-300 before:absolute before:left-0 before:top-1/2 after:content-[''] after:block after:w-[20%] after:border-t after:border-gray-300 after:absolute after:right-0 after:top-1/2 lg:before:w-[40%] lg:after:w-[40%]">
+                        </span>
+
+                        <p className="text-xl p-2 rounded-sm text-center text-accent font-semibold hover:bg-blue-50">
+                            {isExpanded ? "− Collapse tools" : "+ Expand all tools"}
+                        </p>
+                    </button>
+                )
+            }
+
+            {
+                (tools.length > 6) && (
+                    <button 
+                        onClick={toggleExpand} 
+                        className="hidden mt-5 items-center justify-center gap-2 cursor-pointer relative w-full xl:flex"
+                    >
+                        <span className="before:content-[''] before:block before:w-[20%] before:border-t before:border-gray-300 before:absolute before:left-0 before:top-1/2 after:content-[''] after:block after:w-[20%] after:border-t after:border-gray-300 after:absolute after:right-0 after:top-1/2 lg:before:w-[40%] lg:after:w-[40%]">
+                        </span>
+
+                        <p className="text-xl p-2 rounded-sm text-center text-accent font-semibold hover:bg-blue-50">
+                            {isExpanded ? "− Collapse tools" : "+ Expand all tools"}
+                        </p>
+                    </button>
+                )
+            }
+
+            
         
         </>
     )
