@@ -9,7 +9,7 @@ const Categories = ({ filter, handleFilter }: CategoriesProps) => {
     
 
     return (
-        <ul className="mt-7 flex flex-wrap gap-2 lg:mt-7">
+        <ul className="mt-7 flex flex-wrap gap-2 lg:mt-14">
             {categories.map((category, index) => (
                 <li key={index}>
                     <button 

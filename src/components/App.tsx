@@ -3,6 +3,7 @@ import { Hero } from "./Hero/Hero";
 import { Plans } from "./Plans/Plans";
 import { Tools } from "./Tools/Tools";
 import { Proccessing } from "./Processing/Processing";
+import { PlansByBusiness } from "./PlansByBusiness/PlansByBusiness";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Plans />
         <Tools />
         <Proccessing />
+        <PlansByBusiness />
       </main>
     </>
   )

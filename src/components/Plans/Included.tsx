@@ -16,7 +16,7 @@ const Included = () => {
     return (
         <article className="mt-14">
             <h3 className="text-2xl font-medium text-secondary lg:text-4xl">Included with every Square account:</h3>
-            <ul className="flex flex-col gap-5 mt-7 lg:grid lg:grid-cols-3 lg:grid-rows-3">
+            <ul className="flex flex-col gap-5 mt-7 lg:mt-14 lg:grid lg:grid-cols-3 lg:grid-rows-3">
                 {includedList.map((item, index) => (
                     <li key={index} className='flex gap-2 items-center'>
                         <CheckIcon className="w-4 h-4 text-accent"/>  

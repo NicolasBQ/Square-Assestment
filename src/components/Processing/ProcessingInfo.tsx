@@ -23,9 +23,9 @@ const processingInfo = [
 
 const ProcessingInfo = () => {
     return (
-        <div className="flex flex-col gap-10 justify-center mt-14 lg:flex-row lg:h-[240px]">
+        <div className="flex flex-col gap-10 justify-center mt-14 xl:flex-row xl:h-[240px]">
             {processingInfo.map((info, index) => (
-                <article key={index} className="flex flex-col justify-between gap-5 lg:w-1/4">
+                <article key={index} className="flex flex-col justify-between gap-5 xl:w-1/4">
                     <div>
                         <h4 className="text-xl font-medium text-secondary lg:text-2xl">{info.title}</h4>
                         <p className="font-normal mt-5 text-secondary text-base lg:text-lg">{info.description}</p>

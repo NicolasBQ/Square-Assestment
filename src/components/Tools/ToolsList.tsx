@@ -29,7 +29,7 @@ const ToolsList = ({ tools }: ProductListProps) => {
                 ))}
             </ul>
         
-            <ul className="hidden w-full mt-7 flex flex-col gap-8 xl:grid xl:grid-cols-3 xl:gap-8">
+            <ul className="hidden w-full mt-14 flex flex-col gap-8 xl:grid xl:grid-cols-3 xl:gap-8">
                 {tools.slice(0, isExpanded ? tools.length : 6).map((tool, index) => (
                     <li key={index} className="flex flex-col justify-between rounded-2xl border-1 border-grey p-6 h-[248px] lg:w-[380px] lg:h-[300px]">
                         <div className="flex flex-col gap-4">
