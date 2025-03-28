@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
-import { bussinessTypes, options } from "../../menu_data";
+import { menuOptions, options } from "../../menu_data";
 
 // Animation variants for the menu and items
 // These variants define the initial, animate, and exit states for the menu and its items
@@ -74,14 +74,14 @@ const MobileMenu = ({ isOpen }: MobileMenuProps) => {
                         {/* BussinessTypes  */}
                         <nav className='p-6 h-full flex flex-col justify-center'>
                             <motion.ul className='space-y-4'>
-                                {bussinessTypes.map((type) => (
+                                {menuOptions.map((type, index) => (
                                     <motion.li
-                                        key={type.id}
+                                        key={index}
                                         variants={itemVariants}
                                         className='text-lg font-bold  color-primary flex items-end gap-0'
                                     >
-                                        {type.name}
-                                        <ChevronDownIcon className={`${type.name == 'Pricing' ? 'hidden' : 'h-6 w-6 rotate-270'}`} />
+                                        {type.type}
+                                        <ChevronDownIcon className={`${type.type == 'Pricing' ? 'hidden' : 'h-6 w-6 rotate-270'}`} />
                                     </motion.li>
                                 ))}
                             </motion.ul>
