@@ -7,6 +7,7 @@ import { PlansByBusiness } from "./PlansByBusiness/PlansByBusiness";
 import { Solutions } from "./Solutions/Solutions";
 import { Faq } from "./FAQ/Faq";
 import { FinalSection } from "./FinalSection/FinalSection";
+import { Footer } from "./Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Faq />
         <FinalSection />
       </main>
+      <Footer />
     </>
   )
 }
