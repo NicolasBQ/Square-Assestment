@@ -4,7 +4,7 @@ import { CallToAction } from './CallToActions';
 
 const Hero = () => {
     return (
-        <section>
+        <section className='px-6 lg:px-20 xl:px-24 2xl:px-48'>
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:py-7 lg:w-full">
                 <h1 className="text-4xl font-medium text-secondary lg:text-6xl lg:w-1/2">Priced to help you grow and thrive.</h1>
                 <p className=" font-normal text-secondary text-lg lg:text-2xl lg:w-1/3">

@@ -27,7 +27,7 @@ const plans = [
 
 const Plans = () => {
     return (
-        <section className="pt-16">
+        <section className="pt-16 px-6 lg:px-20 xl:px-24 2xl:px-48">
             <h2 className="text-3xl font-medium text-secondary lg:text-5xl">Plans for every stage</h2>
 
             <div className="w-full mt-7 flex flex-col gap-8 lg:flex-row lg:justify-center">

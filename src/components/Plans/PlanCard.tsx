@@ -33,7 +33,7 @@ const PlanCard = ({ planInfo }: PlanCardProps) => {
                     >{planInfo.btnMessage}</button>
                 </div>
             </div>
-            
+             
         </article>
     )
 }
